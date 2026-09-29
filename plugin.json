@@ -2,5 +2,37 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sunnyjoshi-skills",
   "version": "1.0.0",
-  "description": "Practical AI skills by Sunny Joshi, starting with a voice-preserving Humanizer."
+  "description": "Practical AI skills by Sunny Joshi, starting with a voice-preserving Humanizer.",
+  "author": {
+    "name": "Sunny Joshi",
+    "email": "thesunnyjoshi@gmail.com",
+    "url": "https://github.com/sj9911"
+  },
+  "homepage": "https://github.com/sj9911/sunnyjoshi-skills",
+  "repository": "https://github.com/sj9911/sunnyjoshi-skills",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "humanizer", "indian-english", "hinglish"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SunnyJoshi Humanizer",
+        "shortDescription": "Rewrite text in your voice",
+        "longDescription": "Rewrite stiff or AI-sounding text so it feels natural while preserving its meaning. It adapts to emails, WhatsApp messages, LinkedIn posts, articles, academic writing, and documentation, with support for Indian English and opt-in language mixing.",
+        "developerName": "Sunny Joshi",
+        "category": "Productivity",
+        "capabilities": ["Rewrite prose", "Match writing voice", "Support Indian English"],
+        "websiteURL": "https://github.com/sj9911/sunnyjoshi-skills",
+        "privacyPolicyURL": "https://github.com/sj9911/sunnyjoshi-skills/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/sj9911/sunnyjoshi-skills/blob/main/TERMS.md",
+        "defaultPrompt": [
+          "Rewrite this in my natural voice.",
+          "Humanize this for an Indian audience.",
+          "Make this message sound natural and concise."
+        ],
+        "brandColor": "#F59E0B",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/directory-icon.png"
+      }
+    }
+  }
 }

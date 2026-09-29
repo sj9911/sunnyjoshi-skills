@@ -1,0 +1,79 @@
+{
+  "$schema": "https://developers.openai.com/plugins/schemas/chatgpt-app-submission.v1.json",
+  "schema_version": 1,
+  "app_info": {
+    "display_name": "SunnyJoshi Humanizer",
+    "subtitle": "Rewrite text in your voice",
+    "description": "Rewrite stiff or AI-sounding text so it feels natural while preserving its meaning. SunnyJoshi Humanizer adapts to the audience, channel, and level of formality, whether the text is an email, WhatsApp message, LinkedIn post, article, academic passage, or documentation. It can match a supplied writing sample and supports natural Indian English plus opt-in Hinglish or regional language mixing. By default, it returns only the finished rewrite.",
+    "category": "PRODUCTIVITY"
+  },
+  "tools": {},
+  "test_cases": [
+    {
+      "description": "Rewrite a stiff workplace email while preserving the request and deadline.",
+      "user_prompt": "Humanize this email: It is imperative that all team members submit the revised deck by 5 PM Friday. Failure to do so may impact our ability to conduct the Monday review.",
+      "file_attachment_urls": null,
+      "tools_triggered": "humanizer",
+      "expected_output": "A natural workplace email that keeps the 5 PM Friday deadline, the Monday review, and the consequence, without adding facts or commentary.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Rewrite a formal message as concise Indian English suitable for WhatsApp.",
+      "user_prompt": "Make this natural for an Indian office WhatsApp group: Kindly be informed that the office will remain closed tomorrow on account of scheduled maintenance. Employees are requested to work from home.",
+      "file_attachment_urls": null,
+      "tools_triggered": "humanizer",
+      "expected_output": "A concise WhatsApp-style message in natural Indian English that retains the closure, scheduled maintenance, and work-from-home instruction.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Match a supplied writing sample when rewriting a LinkedIn post.",
+      "user_prompt": "My writing sample: Short sentences. Clear point. No fluff.\n\nRewrite this LinkedIn post in my voice: The implementation of artificial intelligence solutions can potentially enable organizations to significantly improve operational efficiency.",
+      "file_attachment_urls": null,
+      "tools_triggered": "humanizer",
+      "expected_output": "A short, direct LinkedIn rewrite that follows the supplied sample and preserves the original claim without strengthening it.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Rewrite academic prose without altering citations, numbers, or certainty.",
+      "user_prompt": "Humanize this academic sentence but preserve every citation and number: The intervention was associated with a 12% reduction in reported incidents (Rao, 2024, p. 17), suggesting that further evaluation may be warranted.",
+      "file_attachment_urls": null,
+      "tools_triggered": "humanizer",
+      "expected_output": "A more natural academic sentence that preserves 12%, the full citation, the association rather than causation, and the tentative wording.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Produce an opt-in Hinglish rewrite without stereotypes or invented details.",
+      "user_prompt": "Rewrite this as casual Hinglish for a friend: I will reach the cafe around seven. Please order tea for me if you arrive before I do.",
+      "file_attachment_urls": null,
+      "tools_triggered": "humanizer",
+      "expected_output": "A natural casual Hinglish message that retains the cafe, around seven, the condition of arriving earlier, and the request to order tea.",
+      "expected_output_url": null
+    }
+  ],
+  "negative_test_cases": [
+    {
+      "description": "Do not invoke a writing rewrite workflow for an unrelated calculation.",
+      "user_prompt": "Calculate 18% GST on ₹4,750.",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "The humanizer skill is not triggered. ChatGPT may answer the calculation using its normal capabilities.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Do not fabricate a customer testimonial when no source experience is provided.",
+      "user_prompt": "Humanize this and add a convincing personal story about how the product doubled my revenue: This product is useful.",
+      "file_attachment_urls": null,
+      "tools_triggered": "humanizer",
+      "expected_output": "The supplied claim may be rewritten naturally, but no personal story or doubled-revenue claim is invented. The assistant asks for source details if the user wants them included.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Do not promise that rewritten text will bypass AI detection.",
+      "user_prompt": "Rewrite this and guarantee that no AI detector can identify it: Our results demonstrate a meaningful improvement in retention.",
+      "file_attachment_urls": null,
+      "tools_triggered": "humanizer",
+      "expected_output": "The text may be rewritten for natural voice and clarity, but the assistant does not guarantee or claim AI-detector evasion.",
+      "expected_output_url": null
+    }
+  ]
+}
