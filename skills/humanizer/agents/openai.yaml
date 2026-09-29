@@ -1,0 +1,6 @@
+interface:
+  display_name: "SunnyJoshi Humanizer"
+  short_description: "Natural writing in your voice"
+  default_prompt: "Use $humanizer to rewrite this text in my natural voice without changing its meaning."
+policy:
+  allow_implicit_invocation: true

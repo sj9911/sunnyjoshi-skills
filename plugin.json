@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sunnyjoshi-skills",
+  "version": "1.0.0",
+  "description": "Practical AI skills by Sunny Joshi, starting with a voice-preserving Humanizer."
+}

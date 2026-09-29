@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "sunnyjoshi-skills",
+  "displayName": "SunnyJoshi Skills",
+  "description": "Practical AI skills by Sunny Joshi, starting with a voice-preserving Humanizer.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sunny Joshi",
+    "email": "thesunnyjoshi@gmail.com",
+    "url": "https://github.com/sj9911"
+  },
+  "homepage": "https://github.com/sj9911/sunnyjoshi-skills",
+  "repository": "https://github.com/sj9911/sunnyjoshi-skills",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "humanizer", "indian-english", "hinglish"]
+}

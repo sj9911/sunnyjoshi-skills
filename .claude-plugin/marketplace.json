@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "sunnyjoshi-skills",
+  "owner": {
+    "name": "Sunny Joshi",
+    "url": "https://github.com/sj9911"
+  },
+  "description": "Practical AI skills by Sunny Joshi.",
+  "metadata": {
+    "description": "Practical AI skills by Sunny Joshi."
+  },
+  "plugins": [
+    {
+      "name": "sunnyjoshi-skills",
+      "source": "./",
+      "description": "Natural, voice-preserving writing tools with Indian English support."
+    }
+  ]
+}

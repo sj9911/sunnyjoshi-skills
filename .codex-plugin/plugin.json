@@ -1,0 +1,28 @@
+{
+  "name": "sunnyjoshi-skills",
+  "version": "1.0.0",
+  "description": "Practical AI skills by Sunny Joshi, starting with a voice-preserving Humanizer.",
+  "author": {
+    "name": "Sunny Joshi",
+    "email": "thesunnyjoshi@gmail.com",
+    "url": "https://github.com/sj9911"
+  },
+  "homepage": "https://github.com/sj9911/sunnyjoshi-skills",
+  "repository": "https://github.com/sj9911/sunnyjoshi-skills",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "humanizer", "indian-english", "hinglish"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SunnyJoshi Skills",
+    "shortDescription": "Natural writing in your voice",
+    "longDescription": "Practical AI skills by Sunny Joshi. The first skill rewrites stiff or AI-sounding prose without changing its meaning, with support for Indian English and opt-in language mixing.",
+    "developerName": "Sunny Joshi",
+    "category": "Productivity",
+    "capabilities": ["Rewrite prose", "Match writing voice", "Support Indian English"],
+    "defaultPrompt": [
+      "Rewrite this in my natural voice.",
+      "Humanize this for an Indian audience.",
+      "Make this message sound natural and concise."
+    ]
+  }
+}
